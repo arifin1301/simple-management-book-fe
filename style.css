@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem;
+    background-color: aliceblue;
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: .8rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+    padding-right: 4rem;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+article .card p {
+    font-size: 1.3rem;
+}
+
+
+
+input {
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid cornflowerblue;
+}
+
+.button-add {
+    height: 3rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: cornflowerblue;
+    box-shadow: 0px 5px 20px cornflowerblue;
+    color: white;
+    border: 2px solid cornflowerblue;
+    transition: all .3s ease-in-out;
+}
+
+.button-add:hover {
+    background-color: white;
+    color: cornflowerblue;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+aside section button {
+    height: 28px;
+    width: 25px;
+    border: none;
+}
+
+.redo-button {
+    background: url(asset/redo.svg);
+    background-size: cover;
+}
+
+.redo-button:hover {
+    background: url(asset/redo-hover.svg);
+    background-size: cover;
+}
+
+.hapus-button {
+    background: url(asset/hapus.svg);
+    background-size: cover;
+    margin-left: 1rem;
+}
+
+.hapus-button:hover {
+    background: url(asset/hapus-hover.svg);
+    background-size: contain;
+}
+
+.check-button {
+    background: url(asset/check.svg);
+    background-size: cover;
+}
+
+.check-button:hover {
+    background: url(asset/check-hover.svg);
+    background-size: cover;
+}
+
+aside section button:hover {
+    cursor: pointer;
+}
+
+.container-progress {
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+aside h1 {
+    color: cornflowerblue;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+
+@media screen and (max-width: 810px) {
+    body {
+        grid-template-columns: auto;
+        grid-row-gap: 1rem;
+        padding: 1rem;
+    }
+
+    .content {
+        padding-right: 0;
+    }
+}
